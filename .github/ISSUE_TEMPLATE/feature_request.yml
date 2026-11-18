@@ -1,0 +1,41 @@
+name: Feature request
+description: Propose a palette change or ask for a UI area the theme does not style yet.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: variant
+    attributes:
+      label: Variant
+      options:
+        - All variants
+        - Hellcat
+        - Hellcat Crimson
+        - Hellcat Oxide
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What should change
+      description: The color role, token, or UI element, and what it should look like.
+      placeholder: Give semantic token colors to decorators; right now they read as plain identifiers.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why
+      description: What breaks or reads badly with the current colors.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference
+      description: Optional. A screenshot, a theme that already does it, or a color value you have in mind.
+    validations:
+      required: false

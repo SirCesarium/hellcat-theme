@@ -1,0 +1,85 @@
+name: Bug report
+description: Something in the theme looks wrong, is unreadable, or never applies.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check that VS Code is up to date and that no other extension is overriding colors before filing.
+
+  - type: dropdown
+    id: variant
+    attributes:
+      label: Variant
+      options:
+        - Hellcat
+        - Hellcat Crimson
+        - Hellcat Oxide
+    validations:
+      required: true
+
+  - type: input
+    id: vscode
+    attributes:
+      label: VS Code version
+      description: From Help > About, or the output of `code --version`.
+    validations:
+      required: true
+
+  - type: input
+    id: extension
+    attributes:
+      label: Hellcat version
+      description: Shown in the Extensions view.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      options:
+        - Linux
+        - macOS
+        - Windows
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What looks wrong
+      description: Name the UI element, token, or terminal color involved.
+      placeholder: The active tab border is invisible against the sidebar.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce
+      placeholder: |
+        1. Run "Preferences: Color Theme" and pick Hellcat Oxide
+        2. Open a TypeScript file
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag an image here. A capture of the affected area says more than a description.
+    validations:
+      required: false
+
+  - type: textarea
+    id: settings
+    attributes:
+      label: Custom color settings
+      description: Paste any `workbench.colorCustomizations` or `editor.tokenColorCustomizations` from settings.json.
+      render: json
+    validations:
+      required: false
