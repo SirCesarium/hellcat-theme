@@ -937,7 +937,7 @@
 		"scmGraph.foreground3": "#82ab8f",
 		"scmGraph.foreground4": "#84a09b",
 		"scmGraph.foreground5": "#b78c79",
-		"scmGraph.historyItemHoverLabelForeground": "#dfe4d9",
+		"scmGraph.historyItemHoverLabelForeground": "#090c0a",
 		"scmGraph.historyItemHoverAdditionsForeground": "#82ab8f",
 		"scmGraph.historyItemHoverDeletionsForeground": "#e37761",
 		"scmGraph.historyItemRefColor": "#cc633d",

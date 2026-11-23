@@ -4,7 +4,7 @@
   "displayName": "Hellcat",
   "description": "A charred theme for Visual Studio Code.",
   "icon": "images/hellcat-256.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
